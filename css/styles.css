@@ -10,13 +10,16 @@ body {
   overflow-x: hidden;
 }
 header {
-  background-color: #3dbeff;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.logo>img{
+.logo > img {
   margin-top: 2em;
   margin-left: 2em;
 }
@@ -28,7 +31,7 @@ ol li {
   padding: 1rem;
   font-family: Barlow;
 }
-ol>li>a{
+ol > li > a {
   color: #fff;
   text-decoration: none;
 }
@@ -37,7 +40,7 @@ main {
 }
 .head {
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   margin: auto;
   color: #fff;
   font-size: 2rem;
@@ -45,14 +48,15 @@ main {
   text-align: center;
   background-color: #3dbeff;
   background-image: url("../images/desktop/image-header.jpg");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  padding-top: 4rem;
 }
-h1{
-  font-family: 'Fraunces', serif;
+h1 {
+  font-family: "Fraunces", serif;
 }
-.head>h1{
+.head > h1 {
   padding-top: 5%;
   text-transform: uppercase;
 }
@@ -69,7 +73,7 @@ section {
   display: flex;
   justify-content: center;
 }
-.advertise{
+.advertise {
   height: 25vh;
   margin: auto;
   text-align: left;
@@ -78,46 +82,50 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.advertise>h2,p,h4{
+.advertise > h2,
+p,
+h4 {
   width: 60%;
 }
-.advertise>h2, .advertise>h4{
-  font-family: 'Fraunces', serif;
+.advertise > h2,
+.advertise > h4 {
+  font-family: "Fraunces", serif;
 }
-.advertise>h2{
+.advertise > h2 {
   font-size: 2rem;
   font-weight: bolder;
 }
-.advertise>h4{
+.advertise > h4 {
   text-decoration: underline pink 8px;
   text-transform: uppercase;
   font-size: medium;
   font-weight: 700;
   /* border-bottom: solid violet 8px; */
 }
-.advertise>p{
+.advertise > p {
   color: hsl(232, 10%, 55%);
   font-family: Barlow;
 }
-.pic{
+.pic {
   width: 100%;
   height: 100%;
 }
-.yellow{
+.yellow {
   background-image: url("../images/desktop/image-transform.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: hsl(50 , 99%, 50%);
+  background-color: hsl(50, 99%, 50%);
 }
-.red{
+.red {
   background-image: url("../images/desktop/image-stand-out.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: hsl(7, 99%, 70%) ;
+  background-color: hsl(7, 99%, 70%);
 }
-.graphic,.photography{
+.graphic,
+.photography {
   width: 50%;
   height: 35rem;
   padding-bottom: 1rem;
@@ -126,23 +134,25 @@ section {
   justify-content: flex-end;
   align-items: center;
 }
-.graphic>h3,.photography>h3{
+.graphic > h3,
+.photography > h3 {
   padding: 3%;
   color: hsl(198, 62%, 26%);
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-size: 2rem;
   font-weight: 900;
 }
-.graphic>p,.photography>p{
+.graphic > p,
+.photography > p {
   padding: 3%;
   color: hsl(198, 62%, 26%);
   font-family: Barlow;
   /* font-size: ; */
 }
-.graphic{
+.graphic {
   background-image: url("../images/desktop/image-graphic-design.jpg");
 }
-.photography{
+.photography {
   background-image: url("../images/desktop/image-photography.jpg");
 }
 
@@ -156,40 +166,41 @@ section {
 .card-container {
   display: flex;
 }
-.card{
+.card {
   height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.card>img{
+.card > img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
 }
-.random_pics{
+.random_pics {
   width: 100%;
   display: flex;
   flex-direction: row;
+  height: 50vh; /* TODO set the proper hight form the design */
 }
-.random_pics>img{
-  width: 25%;
+.random_pics > img {
+  flex: 1;
 }
-footer{
+footer {
   height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   color: hsl(167, 32%, 32%);
-  background-color: hsl(167, 44%, 70%); 
+  background-color: hsl(167, 44%, 70%);
 }
-footer>h1{
+footer > h1 {
   font-family: Barlow;
   font-weight: 900;
 }
-.footer_nav>ol>li>a{
+.footer_nav > ol > li > a {
   color: hsl(167, 32%, 32%);
   font-family: Barlow;
   font-weight: 600;
