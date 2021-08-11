@@ -16,6 +16,8 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -31,12 +33,12 @@
         <img src="./images/logo.svg" alt="sunyside" />
       </div>
       <nav>
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
+        <ol>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ol>
       </nav>
     </header>
     <main>
@@ -45,61 +47,95 @@
       </section>
 
       <section>
-        <div class="box">
-          Transform your brand We are a full-service creative agency
-          specializing in helping brands grow fast. Engage your clients through
-          compelling visuals that do most of the marketing for you. Learn more
+        <div class="box advertise">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency
+            specializing in helping brands grow fast. Engage your clints through
+            compelling visuals that do most of the marketing for you.</p>
+          <h4>Learn more</h4>
         </div>
-        <div class="box"></div>
-      </section>
-      <section>
-        <div class="box"></div>
-        <div class="box">
-          Stand out to the right audience Using a collaborative formula of
-          designers, researchers, photographers, videographers, and copywriters,
-          we’ll build and extend your brand in digital places. Learn more
+        <div class="box pic yellow">
+          <!-- <img src="./images/desktop/image-transform.jpg" alt="some image"> -->
         </div>
       </section>
       <section>
-        <div class="box">
-          Graphic design Great design makes you memorable. We deliver artwork
-          that underscores your brand message and captures potential clients’
-          attention.
+        <div class="box pic red">
+          <!-- <img src="./images/desktop/image-stand-out.jpg" alt="some image"> -->
         </div>
-        <div class="box">
-          Photography Increase your credibility by getting the most stunning,
-          high-quality photos that improve your business image.
+        <div class="box advertise">
+          <h2>Stand out to the right audience</h2>
+          <p>Using a collaborative formula of
+            designers, researchers, photographers, videographers, and copywriters,
+            we’ll build and extend your brand in digital places.</p>
+          <h4>Learn more</h4>
+        </div>
+      </section>
+      <section>
+        <div class="box graphic">
+          <h3>Graphic design</h3>
+          <p>
+            Great design makes you memorable. We deliver artwork
+            that underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+        <div class="box photography">
+          <h3>Photography</h3>
+          <p>
+            Increase your credibility by getting the most stunning,
+            high-quality photos that improve your business image.
+          </p>
         </div>
       </section>
       <section class="clients">
         <h1>Client testimonials</h1>
         <div class="card-container">
           <div class="card">
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit. Emily R. Marketing
-            Director
+            <img src="./images/image-emily.jpg" alt="emily">
+            <p>We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.</p>
+            <h4>Emily R.</h4>
+            <h6>Marketing Director</h6>
           </div>
           <div class="card">
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-            Thomas S. Chief Operating Officer
+            <img src="./images/image-thomas.jpg" alt="tomas">
+            <p>Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.</p>
+            <h4>Thomas S.</h4>
+            <h6>Chief Operating Officer</h6>
           </div>
           <div class="card">
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended! Jennie F. Business Owner
+            <img src="./images/image-jennie.jpg" alt="jennie">
+            <p>Incredible end result! Our sales increased over 400% when we worked
+              with Sunnyside. Highly recommended!</p>
+            <h4>Jennie F.</h4>
+            <h6>Business Owner</h6>
           </div>
         </div>
       </section>
-      <section>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+      <section class="random_pics">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="some pic">
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="some pic">
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="some pic">
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="some pic">
       </section>
       <footer>
-        <img src="./images/logo.svg" alt="sunyside" class="logo-footer" />
-        <div class="nav">About Services Projects Contact</div>
-        <div class="social-icons"></div>
+        <h1>sunnyside</h1>
+        <div class="footer_nav">
+          <ol>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+          </ol>
+        </div>
+        <div class="social-icons">
+          <ol>
+            <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="./images/icon-instagram.svg" alt="instagram"></a></li>
+            <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="./images/icon-pinterest.svg" alt="pintrest"></a></li>
+          </ol>
+        </div>
       </footer>
       <div class="attribution">
         Challenge by
