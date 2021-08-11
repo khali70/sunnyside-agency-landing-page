@@ -58,7 +58,7 @@ h1{
 }
 section {
   display: flex;
-  height: 50vh; /* TODO update layout to proper hight*/
+  height: 35rem; /* TODO update layout to proper hight*/
   text-align: center;
   justify-content: center;
 }
@@ -118,6 +118,9 @@ section {
   background-color: hsl(7, 99%, 70%) ;
 }
 .graphic,.photography{
+  width: 50%;
+  height: 35rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -142,11 +145,28 @@ section {
 .photography{
   background-image: url("../images/desktop/image-photography.jpg");
 }
-section.clients {
+
+.clients {
+  height: 40rem;
+  /* padding-top: 20%; */
+  display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .card-container {
   display: flex;
+}
+.card{
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card>img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
 }
 .random_pics{
   width: 100%;
@@ -155,4 +175,22 @@ section.clients {
 }
 .random_pics>img{
   width: 25%;
+}
+footer{
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: hsl(167, 32%, 32%);
+  background-color: hsl(167, 44%, 70%); 
+}
+footer>h1{
+  font-family: Barlow;
+  font-weight: 900;
+}
+.footer_nav>ol>li>a{
+  color: hsl(167, 32%, 32%);
+  font-family: Barlow;
+  font-weight: 600;
 }
