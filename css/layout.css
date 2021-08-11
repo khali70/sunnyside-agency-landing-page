@@ -54,6 +54,7 @@ h1{
 }
 .head>h1{
   padding-top: 5%;
+  text-transform: uppercase;
 }
 section {
   display: flex;
@@ -103,9 +104,17 @@ section {
   height: 100%;
 }
 .yellow{
-  background-color: hsl(51, 100%, 49%);
+  background-image: url("../images/desktop/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: hsl(50 , 99%, 50%);
 }
 .red{
+  background-image: url("../images/desktop/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   background-color: hsl(7, 99%, 70%) ;
 }
 .graphic,.photography{
