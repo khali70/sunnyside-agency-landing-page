@@ -33,6 +33,11 @@
         <img src="./images/logo.svg" alt="sunyside" />
       </div>
       <nav>
+        <div class="hamburger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <ol>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
@@ -173,5 +178,26 @@
         </div>
       </footer>
     </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navUL = document.querySelector("header ol");
+      const navLinks = document.querySelectorAll("header ol > li");
+
+      hamburger.addEventListener("click", () => {
+        console.log("clicked");
+        navUL.classList.toggle("nav-active");
+        hamburger.classList.toggle("active");
+
+        navLinks.forEach((Link, index) => {
+          if (Link.style.animation) {
+            Link.style.animation = "";
+          } else {
+            Link.style.animation = `fade 0.5s ease forwards ${
+              index / 10 + 0.3
+            }s`;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
